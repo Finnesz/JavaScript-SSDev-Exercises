@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock💎, Paper📜, Scissors ✂</title>
+  </head>
+  <body>
+    <p>Rock Paper Scissors</p>
+    <p></p>
+    <button onclick="
+      if (computer[computer_choice] === 'rock') {
+        alert(`You picked rock. The Computer picked ${computer[computer_choice]}. Tie`);
+      } else if (computer[computer_choice] === 'scissors') {
+        alert(`You picked rock. The Computer picked ${computer[computer_choice]}. You win`);
+      } else {
+        alert(`You picked rock. The Computer picked ${computer[computer_choice]}. You lose`);
+      }
+      computer_choice = Math.floor(Math.random() * 3);
+    ">Rock</button>
+    <button onclick="
+      if (computer[computer_choice] === 'paper') {
+        alert(`You picked paper. The Computer picked ${computer[computer_choice]}. Tie`);
+      } else if (computer[computer_choice] === 'rock') {
+        alert(`You picked paper. The Computer picked ${computer[computer_choice]}. You win`);
+      } else {
+        alert(`You picked paper. The Computer picked ${computer[computer_choice]}. You lose`);
+      }
+      computer_choice = Math.floor(Math.random() * 3);
+    ">Paper</button>
+    <button onclick="
+      if (computer[computer_choice] === 'scissors') {
+        alert(`You picked scissors. The Computer picked ${computer[computer_choice]}. Tie`);
+      } else if (computer[computer_choice] === 'paper') {
+        alert(`You picked scissors. The Computer picked ${computer[computer_choice]}. You win`);
+      } else {
+        alert(`You picked scissors. The Computer picked ${computer[computer_choice]}. You lose`);
+      }
+      computer_choice = Math.floor(Math.random() * 3);
+    ">Scissors</button>
+
+    <script>
+      let computer = ['rock', 'paper', 'scissors'];
+      let computer_choice = Math.floor(Math.random() * 3);
+    </script>
+
+  </body>
+</html>
