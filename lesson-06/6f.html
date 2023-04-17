@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>6F-6J | Coin-flip</title>
+  </head>
+  <body>
+    <script>
+      let coin_side = Math.random(); // 6f
+      let result; // 6h
+      let guess = 'heads'; // 6i
+      if (coin_side < 1/2) { // 6g
+        result = 'heads';       
+      } else {
+        result = 'tails';
+      }
+      console.log((guess === result) ? 'You win' : 'You lose'); // 6j
+    </script>
+  </body>
+</html>
