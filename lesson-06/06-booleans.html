@@ -7,27 +7,15 @@
 
   <body>
     <script>
-      true
-      false
+      const result = false ? 'truthy' : 'falsy';
+      console.log(result);
 
-      console.log(2 > 5);
-      console.log(5 !== '5');
+      false && console.log('hello');
+      const message = 10 && 'Yo';
+      console.log(message)
 
-      if (true) {
-        console.log('hello');
-      } else {
-        console.log('else');
-      }
-      
-      const age = 15;
-
-      if (age >= 16) {
-        console.log('Can drive legally.');
-      } else if (age >= 14) {
-        console.log('Almost there.');
-      } else {
-        console.log('Can not drive legally.');
-      }
+      const currency = undefined || 'USD';
+      console.log(currency);
     </script>
   </body>
 </html>
