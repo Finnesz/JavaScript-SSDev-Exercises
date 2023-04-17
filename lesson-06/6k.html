@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Variable Exercise | Cart Quantity</title>
+  </head>
+  <body>
+    <p>Cart Quantity</p>
+    <button onclick="console.log(`Cart quantity: ${item}`);">Show Quantity</button>
+    <button onclick="item < 10 ? item += 1:alert('The cart is full'); console.log(`Cart quantity: ${item}`);">Add to Cart</button>
+    <button onclick="item + 2 < 10 ? item += 2:alert('The cart is full'); console.log(`Cart quantity: ${item}`);">+2</button>
+    <button onclick="item + 3 < 10 ? item += 3:alert('The cart is full'); console.log(`Cart quantity: ${item}`);">+3</button>
+    <!--5H Exercise--> 
+    <button onclick="item + 4 < 10 ? item +=4:alert('The cart is full'); console.log(`Cart quantity: ${item}`)">+4</button>
+    <button onclick="item + 5 < 10 ? item += 5:alert('The cart is full'); console.log(`Cart quantity: ${item}`)">+5</button>
+    <!--5I Exercise & 5K Exercise-->
+    <button onclick="item > 0 ? item--:alert('Not enough items in the cart'); console.log(`Cart quantity: ${item}`)">Remove from cart</button>
+    <!--5J Exercise & 5K Exercise-->
+    <button onclick="item - 2 > 0 ? item -= 2:alert('Not enough items in the cart'); console.log(`Cart quantity: ${item}`);">-2</button>
+    <button onclick="item - 3 > 0 ? item -= 3:alert('Not enough items in the cart'); console.log(`Cart quantity: ${item}`)">-3</button>
+    <button onclick="item = 0; console.log('Cart was reset.'); console.log(`Cart quantity: ${item}`);">Reset Cart</button>
+
+    <script>
+      let item = 0;
+    </script>
+
+  </body>
+</html>
